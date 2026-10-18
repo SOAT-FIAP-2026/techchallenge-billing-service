@@ -22,6 +22,7 @@ namespace Fiap.TechChallenge.Billing.Infrastructure.Data
 
             var mongoUrl = new MongoUrl(_settings.ConnectionString);
             var clientSettings = MongoClientSettings.FromUrl(mongoUrl);
+            clientSettings.ServerSelectionTimeout = TimeSpan.FromSeconds(3);
             _client = new MongoClient(clientSettings);
 
             var dbName = !string.IsNullOrWhiteSpace(_settings.DatabaseName)

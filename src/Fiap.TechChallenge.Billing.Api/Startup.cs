@@ -34,7 +34,6 @@ namespace Fiap.TechChallenge.Billing.Api
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "TechChallenge Billing API v1");
-                c.RoutePrefix = "swagger";
             });
 
             app.UseRouting();
@@ -42,6 +41,8 @@ namespace Fiap.TechChallenge.Billing.Api
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
+
+            app.MapGet("/", () => Results.Redirect("/swagger"));
 
             app.MapHealthChecks("/health", new HealthCheckOptions
             {

@@ -33,7 +33,16 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var mongoContext = scope.ServiceProvider.GetRequiredService<IMongoDbContext>();
-    await mongoContext.EnsureIndexesAsync();
+    using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(3));
+    try
+    {
+        await mongoContext.EnsureIndexesAsync(cts.Token);
+    }
+    catch (Exception ex)
+    {
+        var initLogger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+        initLogger.LogWarning(ex, "MongoDB offline ou não responsivo na inicialização. A API iniciará e responderá às requisições normalmente.");
+    }
 
     // Verificação de resolução de parâmetros no AWS SSM se habilitado
     var ssmResolver = scope.ServiceProvider.GetRequiredService<ISsmSecretResolver>();

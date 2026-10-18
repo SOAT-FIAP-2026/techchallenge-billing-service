@@ -15,7 +15,6 @@ namespace Fiap.TechChallenge.Billing.Api.Configurations
             services.AddExternal(configuration);
 
             services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
         }
     }
 }
