@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{75DC41DB-3B7A-445A-AFE9-CA7D6ED86E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TechChallenge.Billing.Domain", "src\Fiap.TechChallenge.Billing.Domain\Fiap.TechChallenge.Billing.Domain.csproj", "{4AA77E2A-ECC3-491E-A448-9D51B68F9823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TechChallenge.Billing.Application", "src\Fiap.TechChallenge.Billing.Application\Fiap.TechChallenge.Billing.Application.csproj", "{BDE887A0-7CED-4168-813C-90DCE9ADF9C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TechChallenge.Billing.Infrastructure", "src\Fiap.TechChallenge.Billing.Infrastructure\Fiap.TechChallenge.Billing.Infrastructure.csproj", "{F17FC3EC-D89A-4BDC-9B81-A81655FBD382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TechChallenge.Billing.External", "src\Fiap.TechChallenge.Billing.External\Fiap.TechChallenge.Billing.External.csproj", "{922AF91A-3412-4C38-B976-6C558F5AC548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TechChallenge.Billing.Api", "src\Fiap.TechChallenge.Billing.Api\Fiap.TechChallenge.Billing.Api.csproj", "{B5DABA4A-21E6-46B3-A76B-57CE7CF2703D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AA77E2A-ECC3-491E-A448-9D51B68F9823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA77E2A-ECC3-491E-A448-9D51B68F9823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA77E2A-ECC3-491E-A448-9D51B68F9823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA77E2A-ECC3-491E-A448-9D51B68F9823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE887A0-7CED-4168-813C-90DCE9ADF9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE887A0-7CED-4168-813C-90DCE9ADF9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE887A0-7CED-4168-813C-90DCE9ADF9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE887A0-7CED-4168-813C-90DCE9ADF9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17FC3EC-D89A-4BDC-9B81-A81655FBD382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17FC3EC-D89A-4BDC-9B81-A81655FBD382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17FC3EC-D89A-4BDC-9B81-A81655FBD382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17FC3EC-D89A-4BDC-9B81-A81655FBD382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922AF91A-3412-4C38-B976-6C558F5AC548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922AF91A-3412-4C38-B976-6C558F5AC548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922AF91A-3412-4C38-B976-6C558F5AC548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922AF91A-3412-4C38-B976-6C558F5AC548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DABA4A-21E6-46B3-A76B-57CE7CF2703D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DABA4A-21E6-46B3-A76B-57CE7CF2703D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DABA4A-21E6-46B3-A76B-57CE7CF2703D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DABA4A-21E6-46B3-A76B-57CE7CF2703D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AA77E2A-ECC3-491E-A448-9D51B68F9823} = {75DC41DB-3B7A-445A-AFE9-CA7D6ED86E4D}
+		{BDE887A0-7CED-4168-813C-90DCE9ADF9C1} = {75DC41DB-3B7A-445A-AFE9-CA7D6ED86E4D}
+		{F17FC3EC-D89A-4BDC-9B81-A81655FBD382} = {75DC41DB-3B7A-445A-AFE9-CA7D6ED86E4D}
+		{922AF91A-3412-4C38-B976-6C558F5AC548} = {75DC41DB-3B7A-445A-AFE9-CA7D6ED86E4D}
+		{B5DABA4A-21E6-46B3-A76B-57CE7CF2703D} = {75DC41DB-3B7A-445A-AFE9-CA7D6ED86E4D}
+	EndGlobalSection
+EndGlobal
